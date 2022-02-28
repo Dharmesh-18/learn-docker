@@ -13,7 +13,7 @@ Run a container to show the new web page - you need to use the full path as the 
 # run a container mounting the local volume to the HTML directory:
 docker run -d \
   -p 8082:80 \
-  -v ${PWD}/labs/docker/filesystem/html:/usr/share/nginx/html \
+  -v ${PWD}/labs/filesystem/html:/usr/share/nginx/html \
   --name nginx \
   nginx:alpine
 ```
